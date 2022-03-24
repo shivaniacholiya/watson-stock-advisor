@@ -1,8 +1,5 @@
 ---
 declared-services:
-  wsa-discovery:
-    label: discovery
-    plan: lite
   wsa-cloudant:
     label: cloudantnosqldb
     plan: lite
@@ -16,7 +13,6 @@ applications:
   random-route: false
   timeout: 180
   services:
-  - wsa-discovery
   - wsa-cloudant
 env:
   ALPHAVANTAGE_API_KEY: placeholder
